@@ -1,0 +1,79 @@
+.header {
+  background-color: $background-dark;
+  @include flex($justify-content: space-between);
+  padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
+}
+
+.visually-hidden {
+  @extend %h1;
+}
+
+.logo {
+  font-size: toRem(14px);
+  font-family: $futura-demic;
+  color: $gold;
+  text-transform: uppercase;
+}
+
+.navigation {
+  font-size: toRem(14px);
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: $futura-book;
+  text-transform: uppercase;
+
+  & .menu-item {
+    margin-right: toRem(47px)
+  }
+
+  & .last-item {
+    margin-right: 0;
+  }
+}
+
+.menu-item .link {
+  transition: color $transit;
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+.link {
+  color: $white;
+}
+
+.phone-number {
+  font-family: $futura-demic;
+  font-size: toRem(14px);
+  border-bottom: 1px solid $gold;
+  transition: border $transit, color $transit;
+  color: $gold;
+
+  &:hover {
+    border: 0;
+    color: $white;
+  }
+}
+
+.call-request {
+  width: toRem(161px);
+  height: toRem(37px);
+  background-color: $gold;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  font-family: $futura-demic;
+  color: $white;
+  text-transform: uppercase;
+  transition: box-shadow $transit;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 1);
+  }
+}

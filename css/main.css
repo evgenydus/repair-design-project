@@ -1,0 +1,116 @@
+.visually-hidden {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../../assets/fonts/FuturaDemiC.ttf"); }
+
+@font-face {
+  font-family: "FuturaBook";
+  src: url("../../assets/fonts/futurabookc.otf"); }
+
+@font-face {
+  font-family: "Yeseva";
+  src: url("../../assets/fonts/Yeseva_One_Regular.ttf"); }
+
+html, body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0; }
+
+a:link,
+a:active,
+a:visited {
+  color: #000;
+  text-decoration: none; }
+
+.header {
+  background-color: #131313;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6.25rem 1.375rem 5.125rem; }
+
+.logo {
+  font-size: 0.875rem;
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  color: #e3b873;
+  text-transform: uppercase; }
+
+.navigation {
+  font-size: 0.875rem; }
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: "FuturaBook", "Arial", sans-serif;
+  text-transform: uppercase; }
+  .navbar .menu-item {
+    margin-right: 2.9375rem; }
+  .navbar .last-item {
+    margin-right: 0; }
+
+.menu-item .link {
+  transition: color 0.25s ease; }
+  .menu-item .link:hover {
+    color: #e3b873; }
+
+.link {
+  color: #fff; }
+
+.phone-number {
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #e3b873;
+  transition: border 0.25s ease, color 0.25s ease;
+  color: #e3b873; }
+  .phone-number:hover {
+    border: 0;
+    color: #fff; }
+
+.call-request {
+  width: 10.0625rem;
+  height: 2.3125rem;
+  background-color: #e3b873;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transition: box-shadow 0.25s ease; }
+  .call-request:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px #e3b873; }
+
+/*
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';*/
+
+/*# sourceMappingURL=main.css.map */
