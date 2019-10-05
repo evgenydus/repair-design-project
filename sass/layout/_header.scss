@@ -9,9 +9,9 @@
 }
 
 .logo {
-  font-size: toRem(14px);
-  font-family: $futura-demic;
   color: $gold;
+  font-family: $futura-demic;
+  font-size: toRem(14px);
   text-transform: uppercase;
 }
 
@@ -20,10 +20,10 @@
 }
 
 .navbar {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
   font-family: $futura-book;
+  justify-content: space-between;
+  list-style: none;
   text-transform: uppercase;
 
   & .menu-item {
@@ -48,11 +48,11 @@
 }
 
 .phone-number {
+  border-bottom: 1px solid $gold;
+  color: $gold;
   font-family: $futura-demic;
   font-size: toRem(14px);
-  border-bottom: 1px solid $gold;
   transition: border $transit, color $transit;
-  color: $gold;
 
   &:hover {
     border: 0;
@@ -61,19 +61,19 @@
 }
 
 .call-request {
-  width: toRem(161px);
-  height: toRem(37px);
   background-color: $gold;
-  border: 0;
   border-radius: 2px;
-  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
-  font-family: $futura-demic;
+  border: 0;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
   color: $white;
+  font-family: $futura-demic;
+  font-size: toRem(13px);
+  padding: toRem(13px) toRem(33px);
   text-transform: uppercase;
   transition: box-shadow $transit;
 
   &:hover {
-    cursor: pointer;
     box-shadow: 0 5px 15px rgba(227, 184, 115, 1);
+    cursor: pointer;
   }
 }
