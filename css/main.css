@@ -212,6 +212,41 @@ a:visited {
   transform: rotate(-45deg);
   width: 0.375rem; }
 
+.projects {
+  background-color: #131313;
+  height: 67.125rem; }
+
+.subscription {
+  height: 43.75rem; }
+
+.types {
+  height: 53.75rem; }
+
+.meausurements {
+  height: 62.5rem; }
+
+.examples {
+  height: 54rem;
+  background-image: url("../../assets/images/examples.jpg"); }
+
+.design-project {
+  height: 108.375rem;
+  background-color: #131313; }
+
+.team {
+  height: 57.5rem; }
+
+.clients {
+  height: 65.375rem; }
+
+.contacts {
+  height: 59.625rem;
+  background-image: url("../../assets/images/contacts-bg.jpg"); }
+
+.footer {
+  height: 8.3125rem;
+  background-color: #131313; }
+
 /*
 @import 'vendors/bootstrap';
 @import 'vendors/jquery-ui';
