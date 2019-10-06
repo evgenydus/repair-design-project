@@ -1,45 +1,75 @@
-.header {
-  background-color: $background-dark;
-  @include flex($justify-content: space-between);
-  padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
-}
-
 .visually-hidden {
   @extend %h1;
 }
 
+
+.header {
+  background-color: $dark;
+  @include flex($justify-content: space-between);
+
+
+@media (min-width: $desktop) {
+  .header {
+    padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
+  }
+
+
+}
+
+@media (max-width: $mobile) {
+  .header {
+    padding: toRem(23px) toRem(18px);
+  }
+
+
+}
+
+
+
 .logo {
   color: $gold;
   font-family: $futura-demic;
-  font-size: toRem(14px);
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: toRem(14px);
+  }
+
+  @media (max-width: $mobile) {
+    font-size: toRem(12px);
+  }
 }
 
 .navigation {
-  font-size: toRem(14px);
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .navbar {
-  display: flex;
-  font-family: $futura-book;
-  justify-content: space-between;
-  list-style: none;
-  text-transform: uppercase;
+  @media (min-width: $desktop) {
+    display: flex;
+    font-family: $futura-book;
+    font-size: toRem(14px);
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
 
-  & .menu-item {
-    margin-right: toRem(47px)
-  }
+    & .menu-item {
+      margin-right: toRem(47px);
 
-  & .last-item {
-    margin-right: 0;
-  }
-}
+      .link {
+        transition: color $transit;
 
-.menu-item .link {
-  transition: color $transit;
+        &:hover {
+          color: $gold;
+        }
+      }
 
-  &:hover {
-    color: $gold;
+      & .last-item {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -48,32 +78,43 @@
 }
 
 .phone-number {
-  border-bottom: 1px solid $gold;
-  color: $gold;
+  color: $white;
   font-family: $futura-demic;
-  font-size: toRem(14px);
-  transition: border $transit, color $transit;
+  transition: color $transit;
 
   &:hover {
-    border: 0;
-    color: $white;
+    border-bottom: 1px solid $gold;
+    color: $gold;
   }
+
+  @media (min-width: $desktop) {
+    font-size: toRem(14px);
+  }
+
+  @media (max-width: $mobile) {
+    font-size: toRem(12px)
+  }
+
 }
 
 .call-request {
-  background-color: $gold;
-  border-radius: 2px;
-  border: 0;
-  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
-  color: $white;
-  font-family: $futura-demic;
-  font-size: toRem(13px);
-  padding: toRem(13px) toRem(33px);
-  text-transform: uppercase;
-  transition: box-shadow $transit;
+  @media (min-width: $desktop) {
+    background-color: $gold;
+    border-radius: 2px;
+    color: $white;
+    font-family: $futura-demic;
+    font-size: toRem(13px);
+    padding: toRem(13px) toRem(33px);
+    text-transform: uppercase;
+    transition: box-shadow $transit;
 
-  &:hover {
-    box-shadow: 0 5px 15px rgba(227, 184, 115, 1);
-    cursor: pointer;
+    &:hover {
+      box-shadow: 0 toRem(5px) toRem(15px) rgba(227, 184, 115, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
   }
 }

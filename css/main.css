@@ -36,106 +36,95 @@ a:visited {
   background-color: #131313;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 6.25rem 1.375rem 5.125rem; }
+  justify-content: space-between; }
+  @media (min-width: 376px) {
+    .header {
+      padding: 1.5rem 6.25rem 1.375rem 5.125rem; } }
+  @media (max-width: 375px) {
+    .header {
+      padding: 1.4375rem 1.125rem; } }
 
 .logo {
   color: #e3b873;
   font-family: "FuturaDemiC", "Arial", sans-serif;
-  font-size: 0.875rem;
   text-transform: uppercase; }
+  @media (min-width: 376px) {
+    .logo {
+      font-size: 0.875rem; } }
+  @media (max-width: 375px) {
+    .logo {
+      font-size: 0.75rem; } }
 
-.navigation {
-  font-size: 0.875rem; }
+@media (max-width: 375px) {
+  .navigation {
+    display: none; } }
 
-.navbar {
-  display: flex;
-  font-family: "FuturaBook", "Arial", sans-serif;
-  justify-content: space-between;
-  list-style: none;
-  text-transform: uppercase; }
-  .navbar .menu-item {
-    margin-right: 2.9375rem; }
-  .navbar .last-item {
-    margin-right: 0; }
-
-.menu-item .link {
-  transition: color 0.25s ease; }
-  .menu-item .link:hover {
-    color: #e3b873; }
+@media (min-width: 376px) {
+  .navbar {
+    display: flex;
+    font-family: "FuturaBook", "Arial", sans-serif;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase; }
+    .navbar .menu-item {
+      margin-right: 2.9375rem; }
+      .navbar .menu-item .link {
+        transition: color 0.25s ease; }
+        .navbar .menu-item .link:hover {
+          color: #e3b873; }
+      .navbar .menu-item .last-item {
+        margin-right: 0; } }
 
 .link {
   color: #fff; }
 
 .phone-number {
-  border-bottom: 1px solid #e3b873;
-  color: #e3b873;
-  font-family: "FuturaDemiC", "Arial", sans-serif;
-  font-size: 0.875rem;
-  transition: border 0.25s ease, color 0.25s ease; }
-  .phone-number:hover {
-    border: 0;
-    color: #fff; }
-
-.call-request {
-  background-color: #e3b873;
-  border-radius: 2px;
-  border: 0;
-  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
   color: #fff;
   font-family: "FuturaDemiC", "Arial", sans-serif;
-  font-size: 0.8125rem;
-  padding: 0.8125rem 2.0625rem;
-  text-transform: uppercase;
-  transition: box-shadow 0.25s ease; }
-  .call-request:hover {
-    box-shadow: 0 5px 15px #e3b873;
-    cursor: pointer; }
+  transition: color 0.25s ease; }
+  .phone-number:hover {
+    border-bottom: 1px solid #e3b873;
+    color: #e3b873; }
+  @media (min-width: 376px) {
+    .phone-number {
+      font-size: 0.875rem; } }
+  @media (max-width: 375px) {
+    .phone-number {
+      font-size: 0.75rem; } }
+
+@media (min-width: 376px) {
+  .call-request {
+    background-color: #e3b873;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "FuturaDemiC", "Arial", sans-serif;
+    font-size: 0.8125rem;
+    padding: 0.8125rem 2.0625rem;
+    text-transform: uppercase;
+    transition: box-shadow 0.25s ease; }
+    .call-request:hover {
+      box-shadow: 0 0.3125rem 0.9375rem rgba(227, 184, 115, 0.3);
+      cursor: pointer; } }
+
+@media (max-width: 375px) {
+  .call-request {
+    display: none; } }
 
 .home {
   display: flex;
   position: relative; }
 
-.socials {
-  background-color: #131313; }
-
-.instagram-link {
-  position: relative;
-  top: 38%; }
-
-.instagram {
-  color: #e3b873;
-  display: inline-block;
-  font-family: "FuturaDemiC", "Arial", sans-serif;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  transform: rotate(90deg);
-  transition: color 0.25s ease; }
-  .instagram::after {
-    border-bottom: 1.5px solid #e3b873;
-    content: '';
-    margin-left: 8px;
-    position: absolute;
-    top: 50%;
-    transition: border 0.25s ease;
-    width: 50px; }
-  .instagram:hover {
-    color: #fff; }
-
 .main-wrapper {
   background-image: url("../../assets/images/main-image.jpg");
-  flex-grow: 1;
-  padding: 12.125rem 0 13rem 3.75rem; }
+  flex-grow: 1; }
 
 .proposition {
-  color: #fff;
-  max-width: 33.75rem; }
+  color: #fff; }
 
 .proposition-head {
   font-family: "Yeseva", "Times New Roman", serif;
-  font-size: 2.5rem;
   font-weight: normal;
-  margin-bottom: 1.25rem;
   text-transform: uppercase; }
 
 .city {
@@ -143,74 +132,138 @@ a:visited {
 
 .proposition-text {
   font-family: "FuturaBook", "Arial", sans-serif;
-  font-size: 1.375rem;
-  font-weight: normal;
-  line-height: 30px;
-  max-width: 450px;
-  margin-bottom: 40px; }
+  font-weight: normal; }
 
 .calculate {
   background-color: #e3b873;
   border-radius: 2px;
   border: 0;
-  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
   color: #fff;
   font-family: "FuturaDemiC", "Arial", sans-serif;
   font-size: 0.8125rem;
-  margin-right: 1.25rem;
-  padding: 1.25rem 2.5625rem;
+  text-align: center;
   text-transform: uppercase;
   transition: box-shadow 0.25s ease; }
   .calculate:hover {
     cursor: pointer;
-    box-shadow: 0 5px 15px #e3b873; }
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3); }
 
-.submit-applicaton {
+.submit-application {
   background: none;
   border-radius: 2px;
   border: 1px solid #fff;
   color: #fff;
   font-family: "FuturaDemiC", "Arial", sans-serif;
   font-size: 0.8125rem;
-  padding: 1.25rem 1.375rem;
+  text-align: center;
   text-transform: uppercase;
   transition: box-shadow 0.25s ease; }
-  .submit-applicaton:hover {
-    box-shadow: 0 5px 15px #e3b873;
+  .submit-application:hover {
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
     cursor: pointer; }
 
-.scroller {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  background-color: #131313;
-  bottom: -2.6875rem;
-  padding: 2.125rem 3rem;
-  position: absolute;
-  transition: box-shadow 0.25s ease; }
-  .scroller:hover {
-    box-shadow: inset 0 0 15px 5px rgba(227, 184, 115, 0.2);
-    cursor: pointer; }
+@media (min-width: 376px) {
+  .socials {
+    background-color: #131313; }
+  .instagram-link {
+    position: relative;
+    top: 38%; }
+  .instagram {
+    color: #e3b873;
+    display: inline-block;
+    font-family: "FuturaDemiC", "Arial", sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transition: color 0.25s ease; }
+    .instagram::after {
+      border-bottom: 1.5px solid #e3b873;
+      content: '';
+      margin-left: 8px;
+      position: absolute;
+      top: 50%;
+      transition: border 0.25s ease;
+      width: 50px; }
+    .instagram:hover {
+      color: #fff; }
+  .main-wrapper {
+    padding: 12.125rem 0 13rem 3.75rem; }
+  .proposition {
+    max-width: 33.75rem; }
+  .proposition-head {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem; }
+  .proposition-text {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    margin-bottom: 2.5rem;
+    max-width: 450px; }
+  .calculate {
+    margin-right: 1.25rem;
+    padding: 1.25rem 2.5625rem;
+    max-width: 12.8125rem; }
+  .submit-application {
+    padding: 1.25rem 1.375rem;
+    transition: box-shadow 0.25s ease;
+    max-width: 12.8125rem; }
+  .submit-application-mobile {
+    display: none; }
+  .scroller {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    bottom: -2.6875rem;
+    padding: 2.125rem 3rem;
+    position: absolute;
+    transition: box-shadow 0.25s ease; }
+    .scroller:hover {
+      box-shadow: inset 0 0 15px 5px rgba(227, 184, 115, 0.2);
+      cursor: pointer; }
+  .scroll {
+    color: #fff;
+    font-family: "DM", "Yeseva", "Times New Roman", serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-right: 0.625rem;
+    text-transform: uppercase; }
+  .arrow-down {
+    border-radius: 100%;
+    border: 1.5px solid #e3b873;
+    padding: 0.625rem; }
+  .arrow {
+    border-bottom: 1.5px solid #e3b873;
+    border-left: 1.5px solid #e3b873;
+    height: 0.375rem;
+    transform: rotate(-45deg);
+    width: 0.375rem; } }
 
-.scroll {
-  color: #fff;
-  font-family: "DM", "Yeseva", "Times New Roman", serif;
-  font-size: 0.875rem;
-  font-weight: normal;
-  margin-right: 0.625rem;
-  text-transform: uppercase; }
-
-.arrow-down {
-  border-radius: 100%;
-  border: 1.5px solid #e3b873;
-  padding: 0.625rem; }
-
-.arrow {
-  border-bottom: 1.5px solid #e3b873;
-  border-left: 1.5px solid #e3b873;
-  height: 0.375rem;
-  transform: rotate(-45deg);
-  width: 0.375rem; }
+/*----------------MOBILE-----------------------*/
+@media (max-width: 375px) {
+  .socials {
+    display: none; }
+  .main-wrapper {
+    padding: 5.3125rem 1.125rem 3.8125rem; }
+  .proposition-head {
+    font-size: 1.4375rem;
+    margin-bottom: 0.9375rem;
+    max-width: 340px; }
+  .proposition-text {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    max-width: 285px;
+    margin-bottom: 2rem; }
+  .calculate {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.625rem; }
+  .submit-application-desktop {
+    display: none; }
+  .submit-application {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+  .scroller {
+    display: none; } }
 
 .projects {
   background-color: #131313;
