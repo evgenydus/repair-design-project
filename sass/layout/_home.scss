@@ -5,6 +5,8 @@
 
 .main-wrapper {
   background-image: url("../../assets/images/main-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-grow: 1;
 }
 
@@ -116,12 +118,14 @@
   }
 
   .calculate {
+    display: inline-block;
     margin-right: toRem(20px);
     max-width: toRem(205px);
     padding: toRem(20px) toRem(41px);
   }
 
   .submit-application {
+    display: inline-block;
     max-width: toRem(205px);
     padding: toRem(20px) toRem(22px);
     transition: box-shadow $transit;
@@ -176,13 +180,13 @@
 
   .main-wrapper {
     padding: toRem(85px) toRem(18px) toRem(61px);
+    background-position: 50%;
   }
 
   .proposition-head {
     font-size: toRem(23px);
     margin-bottom: toRem(15px);
     max-width: 340px;
-
   }
 
   .proposition-text {

@@ -2,52 +2,43 @@
   @extend %h1;
 }
 
-
 .header {
   background-color: $dark;
   @include flex($justify-content: space-between);
+}
 
+.logo {
+  color: $gold;
+  font-family: $futura-demic;
+  text-transform: uppercase;
+}
+
+.link {
+  color: $white;
+}
+
+.phone-number {
+  color: $white;
+  font-family: $futura-demic;
+  transition: color $transit;
+
+  &:hover {
+    border-bottom: 1px solid $gold;
+    color: $gold;
+  }
+
+}
 
 @media (min-width: $desktop) {
   .header {
     padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
   }
 
-
-}
-
-@media (max-width: $mobile) {
-  .header {
-    padding: toRem(23px) toRem(18px);
-  }
-
-
-}
-
-
-
-.logo {
-  color: $gold;
-  font-family: $futura-demic;
-  text-transform: uppercase;
-
-  @media (min-width: $desktop) {
+  .logo {
     font-size: toRem(14px);
   }
 
-  @media (max-width: $mobile) {
-    font-size: toRem(12px);
-  }
-}
-
-.navigation {
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
-
-.navbar {
-  @media (min-width: $desktop) {
+  .navbar {
     display: flex;
     font-family: $futura-book;
     font-size: toRem(14px);
@@ -71,34 +62,12 @@
       }
     }
   }
-}
 
-.link {
-  color: $white;
-}
-
-.phone-number {
-  color: $white;
-  font-family: $futura-demic;
-  transition: color $transit;
-
-  &:hover {
-    border-bottom: 1px solid $gold;
-    color: $gold;
-  }
-
-  @media (min-width: $desktop) {
+  .phone-number {
     font-size: toRem(14px);
   }
 
-  @media (max-width: $mobile) {
-    font-size: toRem(12px)
-  }
-
-}
-
-.call-request {
-  @media (min-width: $desktop) {
+  .call-request {
     background-color: $gold;
     border-radius: 2px;
     color: $white;
@@ -113,8 +82,26 @@
       cursor: pointer;
     }
   }
+}
 
-  @media (max-width: $mobile) {
+@media (max-width: $mobile) {
+  .header {
+    padding: toRem(23px) toRem(18px);
+  }
+
+  .logo {
+    font-size: toRem(12px);
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .phone-number {
+    font-size: toRem(12px)
+  }
+
+  .call-request {
     display: none;
   }
 }
