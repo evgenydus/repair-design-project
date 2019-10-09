@@ -260,8 +260,41 @@ a:visited {
     display: none; } }
 
 .projects {
-  background-color: #131313;
-  height: 67.125rem; }
+  background-color: #131313; }
+
+.projects-container {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center; }
+
+@media (min-width: 376px) {
+  .projects {
+    padding: 6.6875rem 0 25.9375rem 6.3125rem; }
+  .slide-name {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "DM", "Yeseva", "Times New Roman", serif;
+    list-style: none;
+    margin-bottom: 2.8125rem;
+    text-transform: uppercase; }
+    .slide-name .active-slide {
+      color: #e3b873;
+      border-bottom: 1px solid #e3b873; }
+    .slide-name .name {
+      margin-right: 3.75rem;
+      transition: color 0.25s ease; }
+      .slide-name .name:hover {
+        color: #e3b873;
+        cursor: pointer;
+        border-bottom: 1px solid #e3b873; }
+  .project-slides {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
+    .project-slides .slide {
+      margin-right: 1.3125rem; } }
 
 .subscription {
   height: 43.75rem; }

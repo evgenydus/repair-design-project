@@ -1,4 +1,55 @@
 .projects {
   background-color: $dark;
-  height: toRem(1074px);
+}
+
+
+.projects-container {
+  @include flex($align-items: flex-end);
+}
+
+@media (min-width: $desktop) {
+  .projects {
+    padding: toRem(107px) 0 toRem(415px) toRem(101px)
+  }
+
+
+  .slide-name {
+    @include flex($justify-content: flex-start);
+    color: $white-transparent;
+    font-family: $dm;
+    list-style: none;
+    margin-bottom: toRem(45px);
+    text-transform: uppercase;
+
+    & .active-slide {
+      color: $gold;
+      border-bottom: 1px solid $gold;
+    }
+
+    & .name {
+      margin-right: toRem(60px);
+      transition: color $transit;
+
+      &:hover {
+        color: $gold;
+        cursor: pointer;
+        border-bottom: 1px solid $gold;
+      }
+    }
+  }
+  .project-slides {
+    @include flex($justify-content: space-between);
+
+    & .slide {
+      margin-right: toRem(21px);
+    }
+  }
+
+
+}
+
+@media (max-width: $mobile) {
+
+
+
 }
