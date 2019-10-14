@@ -5,109 +5,100 @@
 .header {
   background-color: $dark;
   @include flex($justify-content: space-between);
-
-  @media ($desktop) {
-    padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
-  }
-
-  @media ($mobile) {
-    padding: toRem(23px) toRem(18px);
-  }
 }
 
 .logo {
   color: $gold;
   font-family: $futura-demic;
   text-transform: uppercase;
-  
-  @media ($desktop) {
-    font-size: toRem(14px);
-  }
-
-  @media ($mobile) {
-    font-size: toRem(12px);
-  }
-}
-
-
-
-.navbar {
-  @media ($desktop) {
-    display: flex;
-    font-family: $futura-book;
-    font-size: toRem(14px);
-    justify-content: space-between;
-    list-style: none;
-    text-transform: uppercase;
-    width: 42vw;
-
-    & .link {
-        transition: $transit;
-
-      &:hover {
-        color: $gold;
-      }
-    }
-
-      & .last-item {
-        margin-right: 0;
-      }
-  }
-}
-
-.call-request {
-  background-color: $gold;
-  border-radius: 2px;
-  color: $white;
-  font-family: $futura-demic;
-  font-size: toRem(13px);
-  padding: toRem(13px) toRem(33px);
-  text-transform: uppercase;
-  transition: $transit;
-
-  &:hover {
-    box-shadow: 0 toRem(5px) toRem(15px) rgba(227, 184, 115, 0.3);
-    cursor: pointer;
-  }
-  
-  @media  ($middle) {
-    min-width: 141px;
-  }
 }
 
 .link {
   color: $white;
 }
 
-.phone-call {
-  @media  ($desktop) {
-    min-width: 105px;
+.phone-number {
+  color: $white;
+  font-family: $futura-demic;
+  transition: color $transit;
+
+  &:hover {
+    border-bottom: 1px solid $gold;
+    color: $gold;
   }
 
-  & .phone-number {
-      color: $white;
-      font-family: $futura-demic;
-      transition: $transit;
+}
 
-      &:hover {
-        border-bottom: 1px solid $gold;
-        color: $gold;
+@media (min-width: $desktop) {
+  .header {
+    padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
+  }
+
+  .logo {
+    font-size: toRem(14px);
+  }
+
+  .navbar {
+    display: flex;
+    font-family: $futura-book;
+    font-size: toRem(14px);
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+
+    & .menu-item {
+      margin-right: toRem(47px);
+
+      .link {
+        transition: color $transit;
+
+        &:hover {
+          color: $gold;
+        }
       }
 
-      @media  ($desktop) {
-        font-size: toRem(14px);
+      & .last-item {
+        margin-right: 0;
       }
+    }
+  }
 
-      @media ($mobile) {
-        font-size: toRem(12px);
-      }
+  .phone-number {
+    font-size: toRem(14px);
+  }
+
+  .call-request {
+    background-color: $gold;
+    border-radius: 2px;
+    color: $white;
+    font-family: $futura-demic;
+    font-size: toRem(13px);
+    padding: toRem(13px) toRem(33px);
+    text-transform: uppercase;
+    transition: box-shadow $transit;
+
+    &:hover {
+      box-shadow: 0 toRem(5px) toRem(15px) rgba(227, 184, 115, 0.3);
+      cursor: pointer;
+    }
   }
 }
 
-@media ($mobile) {
+@media (max-width: $mobile) {
+  .header {
+    padding: toRem(23px) toRem(18px);
+  }
 
-  .navbar {
+  .logo {
+    font-size: toRem(12px);
+  }
+
+  .navigation {
     display: none;
+  }
+
+  .phone-number {
+    font-size: toRem(12px)
   }
 
   .call-request {

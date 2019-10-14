@@ -1,275 +1,55 @@
-.wrapper {
+.projects {
   background-color: $dark;
 }
 
-.projects {
-  @media ($desktop) {
-    padding: toRem(107px) 0 toRem(80px) toRem(101px);
-    }
-
-  @media ($mobile) {
-    padding: toRem(22px) toRem(17px) 0;
-  }
-}
 
 .projects-container {
-  position: relative;
-  flex-direction: column;
-  @include flex($align-items: flex-start);
-
-  @media ($desktop) {
-    flex-wrap: wrap;
-    max-height: 800px;
-    overflow: hidden;
-  }
-
-  @media ($mobile) {
-    align-items: baseline;
-  }
-
-  & .scroll-right {
-    right: 3vw;
-
-    @media ($desktop) {
-      top: 50%;
-      @include scroll-button ($right);
-    }
-
-    @media ($mobile) {
-      top: 45%;      
-      max-width: toRem(35px);
-      max-height: toRem(35px);
-      @include scroll-button ($right-mobile);
-    }
-  }
-  & .scroll-left {
-    @media ($desktop) {
-      display: none;
-    }
-
-    @media ($mobile) {
-      left: 3vw;
-      top: 45%;
-      max-height: toRem(35px);
-      max-width: toRem(35px);
-      @include scroll-button ($left-mobile)
-    }
-  }
-
-  & .flex-pseudo {
-    @media ($desktop) {
-      flex-basis: toRem(70px);
-    }
-
-    @media ($mobile) {
-      display: none;
-    }
-  }
-
-  & .flex-pseudo-bottom {
-    @media ($desktop) {
-      flex-basis: toRem(26px);
-    }
-
-    @media ($mobile) {
-      display: none;
-    }
-  }
+  @include flex($align-items: flex-end);
 }
 
-.project-description {
-
-  @media ($desktop) {
-    max-width: toRem(420px);
-    margin-bottom: toRem(42px);
-    margin-right: toRem(60px);
+@media (min-width: $desktop) {
+  .projects {
+    padding: toRem(107px) 0 toRem(415px) toRem(101px)
   }
 
-  @media ($mobile) {
-    text-align: center;
-  }
 
-  & .description-head {
-      color: $gold;
-      font-family: $yeseva;
-      font-weight: normal;
-      position: relative;
-      text-transform: uppercase;
-      line-height: 2.5rem;
-
-      @media ($desktop) {
-        font-size: toRem(27px);
-        max-width: toRem(255px);
-        margin-bottom: toRem(34px);
-
-        &:after {
-          border-bottom: 1.5px solid #e3b873;
-          content: '';
-          position: absolute;
-          bottom: 25%;
-          right: -3%;
-          width: 92px;
-        }
-      }
-
-      @media ($mobile) {
-        font-size: toRem(22px);
-        margin-bottom: toRem(22px);
-        max-width: 200px;
-      }      
-  }
-
-    .description {
-      color: $white;
-      font-family: $futura-book;
-      font-size: toRem(18px);
-      line-height: 1.8rem;
-    }
-}
-
-
-.project-slider {
-  @media ($desktop) {
-    order: 3;
-  }
-
-  @media ($mobile) {
-    order: 2;
-  }
-}
-  
-.slide-name {
-  @media ($desktop) {
+  .slide-name {
+    @include flex($justify-content: flex-start);
     color: $white-transparent;
     font-family: $dm;
     list-style: none;
     margin-bottom: toRem(45px);
     text-transform: uppercase;
 
-    @include flex($justify-content: flex-start, $align-items: baseline);
-
     & .active-slide {
       color: $gold;
       border-bottom: 1px solid $gold;
-      padding-bottom: 3px;
     }
 
     & .name {
       margin-right: toRem(60px);
-      transition: $transit;
+      transition: color $transit;
 
       &:hover {
         color: $gold;
         cursor: pointer;
         border-bottom: 1px solid $gold;
-        padding-bottom: 3px;
       }
     }
   }
+  .project-slides {
+    @include flex($justify-content: space-between);
 
-  @media ($mobile) {
-    display: none;
-  }
-}
-
-.project-slides {
-  position: relative;
-  @include flex($justify-content: space-between);
-
-  @media ($mobile) {
-    margin-bottom: toRem(36px);
-  }
-
-  & .slide {
-    @media ($desktop) {
+    & .slide {
       margin-right: toRem(21px);
     }
   }
 
-  & .visible {
-    @media ($mobile) {
-      max-width: 100%;
-    }
-  }
 
-  & .hidden {
-    @media ($mobile) {
-      display: none;
-    }
-  }
 }
 
-.description-parameters {
-  @include flex($justify-content: space-between, $align-items: flex-start);
-  flex-flow: column wrap;
-  max-height: toRem(200px);
-  min-width: toRem(420px);
+@media (max-width: $mobile) {
 
-  @media ($mobile) {
-    order: 3;
-    min-width: 360px;
-  }
 
-  & .parameter-head {
-      color: $gold;
-      font-family: $yeseva;
-      font-size: toRem(18px);
-      font-weight: normal;
-      text-transform: uppercase;
-      margin-bottom: toRem(5px);
-  }
 
-  & .parameter {
-    color: $white;
-    font-family: $futura-book;
-    font-size: toRem(15px);
-    line-height: 1.4rem;
-  }
-
-  & .parameter-container {
-    flex: 1 0 toRem(100px);  
-  }
-}
-
-.slider-navigation {
-  min-width: toRem(210px);
-
-  @include flex($justify-content: space-between, $align-items: normal);
-
-  @media ($mobile) {
-    display: none;
-  }
-
-  & .circle {
-    width: 9px;
-    height: 9px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 100%;
-    transition: $transit;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $white;
-    }
-  }
-
-  & .active {
-    background-color: $white;
-  };
-
-  & .slider-arrow {
-    transition: $transit;
-
-    & svg path {
-      transition: $transit;
-    }
-  
-    &:hover {
-      cursor: pointer;
-
-      & svg path {
-        fill: $gold;
-      }
-    }
-  }
 }
