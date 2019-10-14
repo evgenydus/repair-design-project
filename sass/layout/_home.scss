@@ -8,145 +8,178 @@
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
+
+  @media  ($desktop) {
+  padding: toRem(194px) 0 toRem(208px) toRem(60px);
+  }
+
+  @media  ($mobile) {
+    padding: toRem(85px) toRem(18px) toRem(61px);
+    background-position-x: 50%;
+  }
 }
 
 .proposition {
   color: $white;
-}
 
-.proposition-head {
-  font-family: $yeseva;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.city {
-  color: $gold;
-}
-
-.proposition-text {
-  font-family: $futura-book;
-  font-weight: normal;
-}
-
-.calculate {
-  background-color: $gold;
-  border-radius: 2px;
-  border: 0;
-  color: $white;
-  font-family: $futura-demic;
-  font-size: toRem(13px);
-  text-align: center;
-  text-transform: uppercase;
-  transition: box-shadow $transit;
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
-  }
-}
-
-.submit-application {
-  background: none;
-  border-radius: 2px;
-  border: 1px solid $white;
-  color: $white;
-  font-family: $futura-demic;
-  font-size: toRem(13px);
-  text-align: center;
-  text-transform: uppercase;
-  transition: box-shadow $transit;
-
-  &:hover {
-    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
-    cursor: pointer;
-  }
-}
-
-@media (min-width: $desktop) {
-  .socials {
-    background-color: $dark;
-  }
-
-  .instagram-link {
-    position: relative;
-    top: 38%;
-  }
-
-  .instagram {
-    color: $gold;
-    display: inline-block;
-    font-family: $futura-demic;
-    font-size: toRem(14px);
-    text-transform: uppercase;
-    transform: rotate(90deg);
-    transition: color $transit;
-
-    &::after {
-      border-bottom: $border-gold;
-      content: '';
-      margin-left: 8px;
-      position: absolute;
-      top: 50%;
-      transition: border $transit;
-      width: 50px;
-    }
-
-    &:hover {
-      color: $white;
-    }
-  }
-
-  .main-wrapper {
-    padding: toRem(194px) 0 toRem(208px) toRem(60px);
-  }
-
-  .proposition {
+  @media  ($desktop) {
     max-width: toRem(540px);
   }
 
-  .proposition-head {
-    font-size: toRem(40px);
-    margin-bottom: toRem(20px);
+  & .proposition-head {
+    font-family: $yeseva;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @media  ($desktop) {
+      font-size: toRem(40px);
+      margin-bottom: toRem(20px);
+    }
+
+    @media  ($mobile) {
+      font-size: toRem(23px);
+      margin-bottom: toRem(15px);
+      max-width: 265px;
+    }
+
+    & .city {
+      color: $gold;
+    }
   }
 
-  .proposition-text {
-    font-size: toRem(22px);
-    line-height: toRem(30px);
-    margin-bottom: toRem(40px);
-    max-width: 450px;
+  & .proposition-text {
+      font-family: $futura-book;
+      font-weight: normal;
+
+      @media  ($desktop) {
+        font-size: toRem(22px);
+        line-height: toRem(30px);
+        margin-bottom: toRem(40px);
+        max-width: 450px;
+      }
+
+      @media  ($mobile) {
+        font-size: toRem(18px);
+        line-height: toRem(25px);
+        margin-bottom: toRem(32px);
+        max-width: 265px;
+      }
   }
 
-  .calculate {
-    display: inline-block;
-    margin-right: toRem(20px);
-    max-width: toRem(205px);
-    padding: toRem(20px) toRem(41px);
-  }
+  & .calculate {
+      background-color: $gold;
+      border-radius: 2px;
+      border: 0;
+      color: $white;
+      font-family: $futura-demic;
+      font-size: toRem(13px);
+      text-align: center;
+      text-transform: uppercase;
+      transition: $transit;
+    
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+      }
 
-  .submit-application {
-    display: inline-block;
-    max-width: toRem(205px);
-    padding: toRem(20px) toRem(22px);
-    transition: box-shadow $transit;
-  }
+      @media  ($desktop) {
+        display: inline-block;
+        margin-right: toRem(20px);
+        max-width: toRem(205px);
+        padding: toRem(20px) toRem(40px);
+      }
 
-  .submit-application-mobile {
+      @media ($mobile) {
+        margin-bottom: toRem(26px);
+        padding-bottom: toRem(20px);
+        padding-top: toRem(20px);
+        max-width: 344px;
+      }
+  }
+    
+  & .submit-application {
+      background: none;
+      border-radius: 2px;
+      border: 1px solid $white;
+      color: $white;
+      font-family: $futura-demic;
+      font-size: toRem(13px);
+      text-align: center;
+      text-transform: uppercase;
+      transition: $transit;
+    
+      &:hover {
+        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+        cursor: pointer;
+      }
+
+      @media  ($desktop) {
+        display: inline-block;
+        max-width: toRem(205px);
+        padding: toRem(20px) toRem(20px);
+        transition: $transit;
+      }
+
+      @media  ($mobile) {
+        padding-bottom: toRem(20px);
+        padding-top: toRem(20px);
+        max-width: 344px;
+      }
+  }
+}
+
+.socials {
+  background-color: $dark;
+
+  @media  ($mobile) {
     display: none;
   }
 
-  .scroller {
-    @include flex($justify-content: space-between);
-    background-color: $dark;
-    bottom: toRem(-43px);
-    padding: toRem(34px) toRem(48px);
-    position: absolute;
-    transition: box-shadow $transit;
 
-    &:hover {
-      box-shadow: inset 0 0 15px 5px rgba(227, 184, 115, 0.2);
-      cursor: pointer;
-    }
+  & .instagram-link {
+      position: relative;
+      top: 38%;
+  }
+
+  & .instagram {
+      color: $gold;
+      display: inline-block;
+      font-family: $futura-demic;
+      font-size: toRem(14px);
+      text-transform: uppercase;
+      transform: rotate(90deg);
+      transition: $transit;
+
+      &::after {
+        border-bottom: $border-gold;
+        content: '';
+        margin-left: 8px;
+        position: absolute;
+        top: 50%;
+        width: 50px;
+      }
+
+      &:hover {
+        color: $white;
+      }
+  }
+}
+
+.scroller {
+  background-color: $dark;
+  bottom: toRem(-43px);
+  padding: toRem(34px) toRem(48px);
+  position: absolute;
+  transition:  $transit;
+  @include flex($justify-content: space-between);
+
+  &:hover {
+    box-shadow: inset 0 0 15px 5px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+
+  @media  ($mobile) {
+    display: none;
   }
 
   .scroll {
@@ -168,52 +201,20 @@
     border-bottom: $border-gold;
     border-left: $border-gold;
     height: toRem(6px);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translate(12%, 2%);
     width: toRem(6px);
   }
 }
 
-@media (max-width: $mobile) {
-  .socials {
-    display: none;
-  }
 
-  .main-wrapper {
-    padding: toRem(85px) toRem(18px) toRem(61px);
-    background-position: 50%;
-  }
-
-  .proposition-head {
-    font-size: toRem(23px);
-    margin-bottom: toRem(15px);
-    max-width: 340px;
-  }
-
-  .proposition-text {
-    font-size: toRem(18px);
-    line-height: toRem(25px);
-    margin-bottom: toRem(32px);
-    max-width: 285px;
-  }
-
-  .calculate {
-    margin-bottom: toRem(26px);
-    padding-bottom: toRem(20px);
-    padding-top: toRem(20px);
-  }
-
-  .submit-application-desktop {
-    display: none;
-  }
-
-  .submit-application {
-    padding-bottom: toRem(20px);
-    padding-top: toRem(20px);
-  }
-
-  .scroller {
+.submit-application-desktop {
+  @media ($mobile) {
     display: none;
   }
 }
 
-
+.submit-application-mobile {
+  @media ($desktop) {
+    display: none;
+  }
+}

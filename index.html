@@ -12,7 +12,6 @@
     <a class="logo-link link" href="#">
       <h2 class="logo">IC "Repair Design Project"</h2>
     </a>
-    <div class="navigation">
       <ul class="navbar">
         <li class="menu-item">
           <a href="">
@@ -45,12 +44,9 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="phone-call">
-      <a href="tel:+79287683239">
+      <a class="phone-call" href="tel:+79287683239">
         <span class="phone-number link">+7 (928) 768-32-39</span>
       </a>
-    </div>
     <div class="call-request">
       <span>Request a call</span>
     </div>
@@ -82,38 +78,72 @@
       </div>
     </div>
   </main>
-  <section class="projects">
-    <div class="projects-container">
-      <div class="project-description">
-        <h2 class="description-head">Completed projects</h2>
-        <p class="description">Only a small part of the work performed by our company is presented on the site. For 14
-          years on in the construction market we have made happy more than 1000 families</p>
+  <div class="wrapper">
+    <section class="projects">
+      <div class="projects-container">
+        <div class="flex-pseudo"></div>
+        <div class="project-description">
+          <h2 class="description-head">Completed projects</h2>
+          <p class="description">Only a small part of the work performed by our company is presented on the site. For 14
+            years on in the construction market we have made happy more than 1000 families</p>
+        </div>
+        <div class="project-slider">
+          <ul class="slide-name">
+            <li class="name active-slide">Rostov-on-Don, Admiral</li>
+            <li class="name">Sochi Thieves</li>
+            <li class="name">Rostov-on-Don Patriotic</li>
+          </ul>
+          <div class="project-slides">
+            <img class="slide hidden" src="assets/images/slider-1.jpg" alt="">
+            <img class="slide visible" src="assets/images/slider-2.jpg" alt="">
+          </div>
+        </div>
         <div class="description-parameters">
-          <h2 class="parameter-head">City:</h2>
-          <p class="parameter">Rostov-on-Don LCD admiral</p>
-          <h2 class="parameter-head">Apartment area:</h2>
-          <p class="parameter">81 m2</p>
-          <h2 class="parameter-head">Repair time:</h2>
-          <p class="parameter">3.5 months</p>
-          <h2 class="parameter-head">Repair Cost:</h2>
-          <p class="parameter">Upon request</p>
+          <div class="parameter-container">
+            <h2 class="parameter-head">City:</h2>
+            <p class="parameter">Rostov-on-Don</p>
+            <p class="parameter">LCD admiral</p>
+          </div>
+          <div class="parameter-container">
+            <h2 class="parameter-head">Repair time:</h2>
+            <p class="parameter">3.5 months</p>
+          </div>
+          <div class="parameter-container">
+            <h2 class="parameter-head">Apartment area:</h2>
+            <p class="parameter">81 m2</p>
+          </div>
+          <div class="parameter-container">
+            <h2 class="parameter-head">Repair Cost:</h2>
+            <p class="parameter">Upon request</p>
+          </div>
+        </div>     
+        <div class="scroll-right">
+          <div class="scroll-arrow"></div>
+        </div>
+        <div class="scroll-left">
+          <div class="scroll-arrow"></div>
+        </div>
+        <div class="flex-pseudo-bottom"></div>
+        <div class="slider-navigation">
+          <div class="slider-arrow">
+            <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+              </svg>
+          </div>
+          <div class="circle active"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="slider-arrow">
+            <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" fill="white"/>
+              </svg>
+          </div>
         </div>
       </div>
-      <div class="project-slider">
-        <ul class="slide-name">
-          <li class="name active-slide">Rostov-on-Don, Admiral</li>
-          <li class="name">Sochi Thieves</li>
-          <li class="name">Rostov-on-Don Patriotic</li>
-        </ul>
-        <div class="project-slides">
-          <img class="slide" src="assets/images/slider-1.jpg" alt="">
-          <img src="assets/images/slider-2-cut.jpg" alt="">
-        </div>
-      </div>
-      <div class="slider-arrow-button right"></div>
-      <div class="slider-arrow-button left"></div>
-    </div>
-  </section>
+    </section>
+</div>
   <section class="subscription">
   
   </section>

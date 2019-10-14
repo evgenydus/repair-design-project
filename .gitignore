@@ -1,6 +1,7 @@
 .idea/
 .css.map
-draft.css
 node_modules/
-package-lock.json
-package.json
+*.json
+.css/
+.vscode/
+*.exe.stackdump

@@ -2,12 +2,17 @@ $dark: #131313;
 $gold: #e3b873;
 $white: #fff;
 $white-transparent: rgba(255, 255, 255, .3);
+
 $font-size: 16px;
+
 $futura-demic: "FuturaDemiC", "Arial", sans-serif;
 $futura-book: "FuturaBook", "Arial", sans-serif;
 $yeseva: "Yeseva", "Times New Roman", serif;
 $dm: "DM", "Yeseva", "Times New Roman", serif;
-$transit: .25s ease;
+
+$transit: all .25s ease;
 $border-gold: 1.5px solid $gold;
-$mobile: 375px;
-$desktop: 376px;
+
+$mobile: "max-width: 860px";
+$desktop: "min-width: 861px";
+$middle: "max-width: 1150px";
