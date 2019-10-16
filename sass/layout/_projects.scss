@@ -1,10 +1,8 @@
-.wrapper {
-  background-color: $dark;
-}
-
 .projects {
+  background-color: $dark;
+
   @media ($desktop) {
-    padding: toRem(107px) 0 toRem(80px) toRem(101px);
+    padding: toRem(107px) 0 toRem(480px) toRem(101px);
     }
 
   @media ($mobile) {
@@ -28,7 +26,7 @@
   }
 
   & .scroll-right {
-    right: 3vw;
+    right: 2vw;
 
     @media ($desktop) {
       top: 50%;
@@ -36,7 +34,7 @@
     }
 
     @media ($mobile) {
-      top: 45%;      
+      top: 46%;
       max-width: toRem(35px);
       max-height: toRem(35px);
       @include scroll-button ($right-mobile);
@@ -49,7 +47,7 @@
 
     @media ($mobile) {
       left: 3vw;
-      top: 45%;
+      top: 46%;
       max-height: toRem(35px);
       max-width: toRem(35px);
       @include scroll-button ($left-mobile)
@@ -81,7 +79,6 @@
 
   @media ($desktop) {
     max-width: toRem(420px);
-    margin-bottom: toRem(42px);
     margin-right: toRem(60px);
   }
 
@@ -92,7 +89,6 @@
   & .description-head {
       color: $gold;
       font-family: $yeseva;
-      font-weight: normal;
       position: relative;
       text-transform: uppercase;
       line-height: 2.5rem;
@@ -103,16 +99,15 @@
         margin-bottom: toRem(34px);
 
         &:after {
-          border-bottom: 1.5px solid #e3b873;
-          content: '';
-          position: absolute;
           bottom: 25%;
           right: -3%;
-          width: 92px;
+
+          @include pseudo-line(92px);
         }
       }
 
       @media ($mobile) {
+        display: inline-block;
         font-size: toRem(22px);
         margin-bottom: toRem(22px);
         max-width: 200px;
@@ -121,9 +116,18 @@
 
     .description {
       color: $white;
+      display: inline-block;
       font-family: $futura-book;
-      font-size: toRem(18px);
       line-height: 1.8rem;
+      padding-bottom: toRem(36px);
+
+      @media ($desktop) {
+        font-size: toRem(18px);
+      }
+
+      @media ($mobile) {
+        font-size: toRem(14px);
+      }
     }
 }
 
@@ -214,7 +218,6 @@
       color: $gold;
       font-family: $yeseva;
       font-size: toRem(18px);
-      font-weight: normal;
       text-transform: uppercase;
       margin-bottom: toRem(5px);
   }

@@ -28,7 +28,6 @@
 
   & .proposition-head {
     font-family: $yeseva;
-    font-weight: normal;
     text-transform: uppercase;
 
     @media  ($desktop) {
@@ -49,7 +48,6 @@
 
   & .proposition-text {
       font-family: $futura-book;
-      font-weight: normal;
 
       @media  ($desktop) {
         font-size: toRem(22px);
@@ -78,8 +76,7 @@
       transition: $transit;
     
       &:hover {
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+        @include button-hover;
       }
 
       @media  ($desktop) {
@@ -109,8 +106,7 @@
       transition: $transit;
     
       &:hover {
-        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
-        cursor: pointer;
+        @include button-hover;
       }
 
       @media  ($desktop) {
@@ -151,12 +147,10 @@
       transition: $transit;
 
       &::after {
-        border-bottom: $border-gold;
-        content: '';
         margin-left: 8px;
-        position: absolute;
         top: 50%;
-        width: 50px;
+
+        @include pseudo-line(50px);
       }
 
       &:hover {
@@ -186,7 +180,6 @@
     color: $white;
     font-family: $dm;
     font-size: toRem(14px);
-    font-weight: normal;
     margin-right: toRem(10px);
     text-transform: uppercase;
   }
