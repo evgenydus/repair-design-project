@@ -41,3 +41,41 @@ $right-mobile: rotate(45deg) translate(-85%, 10%);
   box-shadow: 0 toRem(5px) toRem(15px) rgba(227, 184, 115, 0.3);
   cursor: pointer;
 }
+
+@mixin title ($color) {
+  text-align: center;
+
+  & .title {
+    color: $color;
+    font-family: $yeseva;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @media ($desktop) {
+      font-size: toRem(20px);
+      padding-bottom: toRem(13px);
+    }
+
+    @media ($mobile) {
+      font-size: toRem(22px);
+      padding-bottom: toRem(20px);
+    }
+  }
+
+  .title-icon {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      right: 45px;
+      top: 50%;
+      @include pseudo-line(32px);
+    }
+
+    &::after {
+      left: 45px;
+      top: 50%;
+      @include pseudo-line(32px);
+    }
+  }
+}

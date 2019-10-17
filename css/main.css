@@ -550,8 +550,7 @@ a:visited {
     padding: 2.5rem 1.0625rem 0; } }
 
 .subscription-title {
-  text-align: center;
-  padding-bottom: 2.5rem; }
+  text-align: center; }
   .subscription-title .title {
     color: #fff;
     font-family: "Yeseva", "Times New Roman", serif;
@@ -565,17 +564,17 @@ a:visited {
       .subscription-title .title {
         font-size: 1.375rem;
         padding-bottom: 1.25rem; } }
-  .subscription-title .camera {
+  .subscription-title .title-icon {
     display: inline-block;
     position: relative; }
-    .subscription-title .camera::before {
+    .subscription-title .title-icon::before {
       right: 45px;
       top: 50%;
       border-bottom: 1.5px solid #e3b873;
       content: '';
       position: absolute;
       width: 32px; }
-    .subscription-title .camera::after {
+    .subscription-title .title-icon::after {
       left: 45px;
       top: 50%;
       border-bottom: 1.5px solid #e3b873;
@@ -583,26 +582,26 @@ a:visited {
       position: absolute;
       width: 32px; }
 
-@media (min-width: 861px) {
-  .video {
-    margin-bottom: 5.625rem; } }
-
-@media (max-width: 860px) {
-  .video {
-    margin-bottom: 3.125rem;
-    max-width: 100%;
-    padding-top: 56.25%;
-    position: relative; } }
-
-.video .video-frame {
-  border: 0; }
+.video {
+  margin-top: 2.5rem; }
+  @media (min-width: 861px) {
+    .video {
+      margin-bottom: 5.625rem; } }
   @media (max-width: 860px) {
-    .video .video-frame {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%; } }
+    .video {
+      margin-bottom: 3.125rem;
+      max-width: 100%;
+      padding-top: 56.25%;
+      position: relative; } }
+  .video .video-frame {
+    border: 0; }
+    @media (max-width: 860px) {
+      .video .video-frame {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; } }
 
 .video-caption {
   font-family: "FuturaBook", "Arial", sans-serif;
@@ -762,33 +761,118 @@ a:visited {
       box-shadow: 0 0.3125rem 0.9375rem rgba(227, 184, 115, 0.3);
       cursor: pointer; }
 
-.types {
-  height: 53.75rem; }
+@media (min-width: 861px) {
+  .types {
+    padding: 0 6.25rem; } }
 
-.meausurements {
-  height: 62.5rem; }
+@media (max-width: 860px) {
+  .types {
+    padding: 5.1875rem 1.0625rem 0; } }
 
-.examples {
-  height: 54rem;
-  background-image: url("../../assets/images/examples.jpg"); }
+.types .types-title {
+  text-align: center; }
+  .types .types-title .title {
+    color: #000;
+    font-family: "Yeseva", "Times New Roman", serif;
+    font-weight: normal;
+    text-transform: uppercase; }
+    @media (min-width: 861px) {
+      .types .types-title .title {
+        font-size: 1.25rem;
+        padding-bottom: 0.8125rem; } }
+    @media (max-width: 860px) {
+      .types .types-title .title {
+        font-size: 1.375rem;
+        padding-bottom: 1.25rem; } }
+  .types .types-title .title-icon {
+    display: inline-block;
+    position: relative; }
+    .types .types-title .title-icon::before {
+      right: 45px;
+      top: 50%;
+      border-bottom: 1.5px solid #e3b873;
+      content: '';
+      position: absolute;
+      width: 32px; }
+    .types .types-title .title-icon::after {
+      left: 45px;
+      top: 50%;
+      border-bottom: 1.5px solid #e3b873;
+      content: '';
+      position: absolute;
+      width: 32px; }
 
-.design-project {
-  height: 108.375rem;
-  background-color: #131313; }
-
-.team {
-  height: 57.5rem; }
-
-.clients {
-  height: 65.375rem; }
-
-.contacts {
-  height: 59.625rem;
-  background-image: url("../../assets/images/contacts-bg.jpg"); }
-
-.footer {
-  height: 8.3125rem;
-  background-color: #131313; }
+.type-wrapper {
+  margin-top: 2.5rem; }
+  @media (min-width: 861px) {
+    .type-wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-between; } }
+  .type-wrapper .type-container {
+    position: relative; }
+    @media (max-width: 860px) {
+      .type-wrapper .type-container {
+        margin-bottom: 12.25rem;
+        min-height: 22.8125rem; } }
+  .type-wrapper .type-image {
+    max-width: 100%; }
+  .type-wrapper .type-description-container {
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 80%; }
+    @media (min-width: 861px) {
+      .type-wrapper .type-description-container {
+        bottom: -35%;
+        left: 10%;
+        padding: 1.5625rem 0 3.4375rem 2.1875rem; } }
+    @media (max-width: 860px) {
+      .type-wrapper .type-description-container {
+        bottom: -31%;
+        padding: 1.25rem 0 2.8125rem 1.875rem; } }
+    .type-wrapper .type-description-container .type-description-title {
+      font-family: "Yeseva", "Times New Roman", serif; }
+      @media (min-width: 861px) {
+        .type-wrapper .type-description-container .type-description-title {
+          font-size: 1.125rem;
+          padding-bottom: 0.8125rem; } }
+      @media (max-width: 860px) {
+        .type-wrapper .type-description-container .type-description-title {
+          font-size: 0.9375rem;
+          padding-bottom: 0.625rem; } }
+    .type-wrapper .type-description-container .type-description {
+      color: #959595;
+      font-family: "FuturaBook", "Arial", sans-serif;
+      line-height: 1.5rem; }
+      @media (max-width: 860px) {
+        .type-wrapper .type-description-container .type-description {
+          font-size: 0.8125rem; } }
+      .type-wrapper .type-description-container .type-description .list-item {
+        margin-left: 0.9375rem; }
+  .type-wrapper .type-price {
+    background-color: #e3b873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    color: #fff;
+    font-family: "Yeseva", "Times New Roman", serif;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 861px) {
+      .type-wrapper .type-price {
+        bottom: -39%;
+        font-size: 1.125rem;
+        left: 10%;
+        padding-bottom: 1.0625rem;
+        padding-top: 1.0625rem;
+        width: 60%; } }
+    @media (max-width: 860px) {
+      .type-wrapper .type-price {
+        bottom: -37%;
+        font-size: 0.9375rem;
+        padding-bottom: 0.75rem;
+        padding-top: 0.75rem;
+        width: 55%; } }
 
 /*
 @import 'vendors/bootstrap';

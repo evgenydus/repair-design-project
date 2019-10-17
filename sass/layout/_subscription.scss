@@ -12,45 +12,12 @@
 }
 
 .subscription-title {
-  text-align: center;
-  padding-bottom: toRem(40px);
-
-  & .title {
-    color: $white;
-    font-family: $yeseva;
-    font-weight: normal;
-    text-transform: uppercase;
-
-    @media ($desktop) {
-      font-size: toRem(20px);
-      padding-bottom: toRem(13px);
-    }
-
-    @media ($mobile) {
-      font-size: toRem(22px);
-      padding-bottom: toRem(20px);
-    }
-  }
-
- .camera {
-      display: inline-block;
-      position: relative;
-
-      &::before {
-        right: 45px;
-        top: 50%;
-        @include pseudo-line(32px);
-      }
-
-      &::after {
-        left: 45px;
-        top: 50%;
-        @include pseudo-line(32px);
-      }
-    }
-  }
+  @include title ($white);
+}
 
 .video {
+  margin-top: toRem(40px);
+
   @media ($desktop) {
     margin-bottom: toRem(90px);
   }

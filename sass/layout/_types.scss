@@ -1,3 +1,107 @@
 .types {
-  height: toRem(860px);
+  @media ($desktop) {
+    padding: 0 toRem(100px);
+  }
+
+  @media ($mobile) {
+    padding: toRem(83px) toRem(17px) 0;
+  }
+
+  & .types-title {
+      @include title(#000);
+  }
+}
+
+.type-wrapper {
+  margin-top: toRem(40px);
+
+  @media ($desktop) {
+    @include flex($justify-content: space-between);
+  }
+
+  & .type-container {
+    position: relative;
+
+    @media ($mobile) {
+      margin-bottom: toRem(196px);
+      min-height: toRem(365px);
+    }
+  }
+
+  & .type-image {
+    max-width: 100%;
+  }
+
+  & .type-description-container {
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 80%;
+
+    @media ($desktop) {
+      bottom: -35%;
+      left: 10%;
+      padding: toRem(25px) 0 toRem(55px) toRem(35px);
+    }
+
+    @media ($mobile) {
+      bottom: -31%;
+      padding: toRem(20px) 0 toRem(45px) toRem(30px);
+    }
+
+    & .type-description-title {
+      font-family: $yeseva;
+
+      @media ($desktop) {
+        font-size: toRem(18px);
+        padding-bottom: toRem(13px);
+      }
+
+      @media ($mobile) {
+        font-size: toRem(15px);
+        padding-bottom: toRem(10px);
+      }
+    }
+
+    & .type-description {
+      color: $grey;
+      font-family: $futura-book;
+      line-height: 1.5rem;
+
+      @media ($mobile) {
+        font-size: toRem(13px);
+      }
+
+      & .list-item {
+        margin-left: toRem(15px);
+      }
+    }
+  }
+
+  & .type-price {
+    background-color: $gold;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    color: $white;
+    font-family: $yeseva;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media ($desktop) {
+      bottom: -39%;
+      font-size: toRem(18px);
+      left: 10%;
+      padding-bottom: toRem(17px);
+      padding-top: toRem(17px);
+      width: 60%;
+    }
+
+    @media ($mobile) {
+      bottom: -37%;
+      font-size: toRem(15px);
+      padding-bottom: toRem(12px);
+      padding-top: toRem(12px);
+      width: 55%;
+    }
+  }
 }
