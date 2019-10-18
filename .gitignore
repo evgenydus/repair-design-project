@@ -2,6 +2,6 @@
 .css.map
 node_modules/
 *.json
-.css/
+.css
 .vscode/
 *.exe.stackdump

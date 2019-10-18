@@ -874,6 +874,173 @@ a:visited {
         padding-top: 0.75rem;
         width: 55%; } }
 
+.measurements {
+  margin-top: 21.875rem;
+  padding-right: 6.25rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 860px) {
+    .measurements {
+      display: none; } }
+  .measurements .circle {
+    background-image: url("../../assets/images/building.jpg");
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    min-width: 49.375rem;
+    position: relative; }
+    .measurements .circle .feature-container {
+      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+      .measurements .circle .feature-container:nth-child(2) {
+        left: 353px;
+        top: 63px; }
+      .measurements .circle .feature-container:nth-child(3) {
+        left: 431px;
+        top: 173px; }
+      .measurements .circle .feature-container:nth-child(4) {
+        left: 454px;
+        top: 334px; }
+      .measurements .circle .feature-container:nth-child(5) {
+        left: 388px;
+        top: 496px; }
+    .measurements .circle .feature-number {
+      background-color: #e3b873;
+      border-radius: 100%;
+      color: #fff;
+      font-family: "Yeseva", "Times New Roman", serif;
+      font-size: 1.125rem;
+      height: 2.625rem;
+      margin-right: 1.0625rem;
+      width: 2.625rem;
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+    .measurements .circle .feature {
+      font-family: "FuturaBook", "Arial", sans-serif;
+      font-size: 1.125rem;
+      font-weight: bold;
+      max-width: 22.5rem; }
+
+.measure-request {
+  background-color: #131313;
+  display: inline-block;
+  margin-top: 4.375rem;
+  padding: 1.75rem 3.125rem;
+  text-align: right; }
+  .measure-request .measure-request-title {
+    color: #fff;
+    font-family: "FuturaDemiC", "Arial", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    max-width: 17.5rem;
+    text-align: center; }
+  .measure-request .measure {
+    position: relative; }
+    .measure-request .measure .measure-form {
+      font-family: "FuturaBook", "Arial", sans-serif;
+      margin-top: 2.5rem;
+      text-align: left; }
+      .measure-request .measure .measure-form .label {
+        color: #fff;
+        display: block;
+        font-size: 0.9375rem;
+        opacity: .5; }
+      .measure-request .measure .measure-form .input-field {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        font-family: "FuturaBook", "Arial", sans-serif;
+        font-size: 1.0625rem;
+        padding-bottom: 8px;
+        padding-top: 6px;
+        width: 100%; }
+        .measure-request .measure .measure-form .input-field::placeholder {
+          color: #fff;
+          font-family: "FuturaBook", "Arial", sans-serif;
+          font-size: 1.0625rem;
+          width: 100%; }
+    .measure-request .measure .agree {
+      margin-top: 0.9375rem; }
+      .measure-request .measure .agree input {
+        cursor: pointer;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0; }
+      .measure-request .measure .agree .check-container {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-family: "FuturaBook", "Arial", sans-serif;
+        padding-left: 1.5625rem;
+        position: relative; }
+        .measure-request .measure .agree .check-container .checkmark {
+          border-radius: 2px;
+          border: 1px solid #e3b873;
+          height: 1.125rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transition: all 0.25s ease;
+          width: 1.125rem; }
+          .measure-request .measure .agree .check-container .checkmark:after {
+            content: "";
+            display: none;
+            position: absolute;
+            transition: all 0.25s ease; }
+        .measure-request .measure .agree .check-container input:checked ~ .checkmark {
+          background-color: #e3b873;
+          opacity: 1; }
+          .measure-request .measure .agree .check-container input:checked ~ .checkmark:after {
+            display: block; }
+        .measure-request .measure .agree .check-container .checkmark:after {
+          border-bottom: 1.5px solid white;
+          border-right: 1.5px solid white;
+          height: 9px;
+          left: 31%;
+          transform: rotate(45deg);
+          width: 5px; }
+    .measure-request .measure .measure-submit {
+      background-color: #e3b873;
+      border-radius: 2px;
+      border: 0;
+      color: #fff;
+      font-family: "FuturaDemiC", "Arial", sans-serif;
+      font-size: 0.9375rem;
+      margin-top: 2.5rem;
+      min-width: 13.4375rem;
+      padding-bottom: 1.25rem;
+      padding-top: 1.25rem;
+      text-align: center;
+      text-transform: uppercase; }
+      .measure-request .measure .measure-submit:hover {
+        box-shadow: 0 0.3125rem 0.9375rem rgba(227, 184, 115, 0.3);
+        cursor: pointer; }
+
+.discount {
+  align-items: center;
+  color: #e3b873;
+  display: flex;
+  font-family: "FuturaDemiC", "Arial", sans-serif;
+  margin-left: 1.6875rem;
+  margin-top: 2.375rem;
+  max-width: 280px; }
+  .discount .moneybox {
+    background-color: #e3b873;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 1.5625rem;
+    padding: 1.0625rem 1rem; }
+
+.examples {
+  height: 54rem;
+  background-image: url("../../assets/images/examples.jpg"); }
+
 /*
 @import 'vendors/bootstrap';
 @import 'vendors/jquery-ui';
