@@ -22,6 +22,10 @@
   font-family: "DM";
   src: url("../../assets/fonts/DMSerifText-Regular.ttf"); }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/ProximaNova-light.ttf"); }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -913,9 +917,9 @@ a:visited {
       color: #fff;
       font-family: "Yeseva", "Times New Roman", serif;
       font-size: 1.125rem;
-      height: 2.625rem;
+      height: 42px;
       margin-right: 1.0625rem;
-      width: 2.625rem;
+      width: 42px;
       align-items: center;
       display: flex;
       justify-content: center; }
@@ -1037,9 +1041,121 @@ a:visited {
     margin-right: 1.5625rem;
     padding: 1.0625rem 1rem; }
 
-.examples {
-  height: 54rem;
-  background-image: url("../../assets/images/examples.jpg"); }
+.examples-desktop {
+  background-image: url("../../assets/images/examples.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  padding: 8.5625rem 6.25rem 4.875rem 6.25rem;
+  position: relative; }
+  @media (max-width: 860px) {
+    .examples-desktop {
+      display: none; } }
+
+.examples-list .list-title {
+  color: #e3b873;
+  font-family: "Yeseva", "Times New Roman", serif;
+  font-size: 1.6875rem;
+  text-transform: uppercase;
+  max-width: 18.75rem;
+  margin-bottom: 2.9375rem; }
+
+.examples-list .list-item {
+  list-style: none;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1.5625rem;
+  transition: all 0.25s ease; }
+  .examples-list .list-item .active {
+    color: #e3b873;
+    border-bottom: 1px solid #e3b873; }
+  .examples-list .list-item:hover {
+    color: #e3b873;
+    cursor: pointer; }
+
+.example-slides {
+  position: absolute;
+  top: -13%;
+  right: 7%; }
+  .example-slides .column-left {
+    margin-right: 2.6875rem;
+    display: inline-block;
+    margin-top: 75px; }
+  .example-slides .example-image {
+    margin-bottom: 2.5rem;
+    display: block; }
+  .example-slides .column-right {
+    display: inline-block;
+    vertical-align: top; }
+
+.examples-mobile {
+  padding-left: 1.0625rem;
+  padding-right: 1.0625rem;
+  position: relative; }
+  @media (min-width: 861px) {
+    .examples-mobile {
+      display: none; } }
+  .examples-mobile .examples-title {
+    color: #e3b873;
+    font-family: "Yeseva", "Times New Roman", serif;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+    text-align: center;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto; }
+  .examples-mobile .swiper {
+    position: relative; }
+    .examples-mobile .swiper .swiper-image {
+      width: 100%; }
+    .examples-mobile .swiper .scroll-right {
+      right: 3vw;
+      top: 46%;
+      max-width: 2.1875rem;
+      max-height: 2.1875rem;
+      position: absolute;
+      background-color: #e3b873;
+      border-radius: 100%;
+      padding: 1.2em;
+      transition: all 0.25s ease; }
+      .examples-mobile .swiper .scroll-right * {
+        border-top: 2.5px solid #fff;
+        border-right: 2.5px solid #fff;
+        width: 0.7em;
+        height: 0.7em;
+        transform: rotate(45deg) translate(-85%, 10%); }
+      .examples-mobile .swiper .scroll-right:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(227, 184, 115, 0.5); }
+    .examples-mobile .swiper .scroll-left {
+      left: 3vw;
+      top: 46%;
+      max-height: 2.1875rem;
+      max-width: 2.1875rem;
+      position: absolute;
+      background-color: #e3b873;
+      border-radius: 100%;
+      padding: 1.2em;
+      transition: all 0.25s ease; }
+      .examples-mobile .swiper .scroll-left * {
+        border-top: 2.5px solid #fff;
+        border-right: 2.5px solid #fff;
+        width: 0.7em;
+        height: 0.7em;
+        transform: rotate(225deg) translate(55%, 7%); }
+      .examples-mobile .swiper .scroll-left:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(227, 184, 115, 0.5); }
+  .examples-mobile .examples-wrapper {
+    left: 0;
+    position: absolute;
+    background: #131313;
+    width: 100%;
+    min-height: 140px;
+    top: 67%;
+    z-index: -1; }
 
 /*
 @import 'vendors/bootstrap';

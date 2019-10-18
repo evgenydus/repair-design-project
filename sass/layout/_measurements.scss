@@ -46,9 +46,9 @@
         color: $white;
         font-family: $yeseva;
         font-size: toRem(18px);
-        height: toRem(42px);
+        height: 42px;
         margin-right: toRem(17px);
-        width: toRem(42px);
+        width: 42px;
         @include flex;
       }
 
