@@ -1,4 +1,223 @@
 .design-project {
-  height: toRem(1734px);
-  background-color: $dark;
+  position: relative;
+
+  @media ($desktop) {
+    margin-top: toRem(155px);
+    padding-left: toRem(100px);
+    padding-right: toRem(100px);
+  }
+
+  @media ($mobile) {
+    background-color: $dark;
+    padding: toRem(50px) toRem(18px) toRem(150px);
+  }
+
+  & .design-project-title {
+    margin-bottom: toRem(25px);
+    @include title(#000);
+
+    & .title {
+      @media ($mobile) {
+        color: $white;
+      }
+    }
+  }
+
+  & .section-text {
+    font-family: $futura-book;
+    position: relative;
+    text-align: center;
+
+    @media ($desktop) {
+      font-size: toRem(20px);
+      line-height: 2.2rem;
+      margin: 0 auto toRem(40px);
+      max-width: toRem(635px);
+    }
+
+    @media ($mobile) {
+      color: $white;
+      font-size: toRem(14px);
+      line-height: 1.5rem;
+    }
+  }
+
+  & .background {
+    @media ($desktop) {
+      background: $dark;
+      height: 75vh;
+      left: 0;
+      position: absolute;
+      top: 77%;
+      width: 100%;
+    }
+  }
+}
+
+.design-project-wrapper {
+  margin-top: toRem(40px);
+
+  @media ($desktop) {
+    @include flex($justify-content: space-between);
+  }
+
+  & .design-project-container {
+    position: relative;
+
+    @media ($mobile) {
+      min-height: toRem(365px);
+
+      &:first-child{
+        margin-bottom: toRem(115px);
+      }
+
+      &:nth-child(2) {
+        margin-bottom: toRem(178px);
+      }
+    }
+  }
+
+  & .design-project-image {
+    max-width: 100%;
+  }
+
+  & .design-project-description-container {
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 85%;
+
+    @media ($desktop) {
+      left: 7.5%;
+      max-width: toRem(330px);
+      padding: toRem(25px) 0 toRem(55px) toRem(35px);
+
+      &.short {
+        bottom: -19%;
+      }
+
+      &.medium {
+        bottom: -36%;
+      }
+
+      &.long {
+        bottom: -64%;
+      }
+    }
+
+    @media ($mobile) {
+      max-width: toRem(270px);
+      padding: toRem(20px) 0 toRem(45px) toRem(30px);
+
+      &.short {
+        bottom: -12%;
+      }
+
+      &.medium {
+        bottom: -31%;
+      }
+
+      &.long {
+        bottom: -32%;
+      }
+    }
+
+    & .design-project-description-title {
+      font-family: $yeseva;
+
+      @media ($desktop) {
+        font-size: toRem(18px);
+        padding-bottom: toRem(13px);
+      }
+
+      @media ($mobile) {
+        font-size: toRem(15px);
+        padding-bottom: toRem(10px);
+      }
+    }
+
+    & .design-project-description {
+      color: $grey;
+      font-family: $futura-book;
+      line-height: 1.5rem;
+      padding-left: toRem(15px);
+
+      @media ($mobile) {
+        font-size: toRem(13px);
+      }
+
+      & .list-item {
+
+        &.mobile {
+          @media ($mobile) {
+            display: inline;
+          }
+
+          @media ($desktop) {
+            display: none;
+          }
+        }
+
+        &.desktop {
+          @media ($mobile) {
+            display: none;
+          }
+
+          @media ($desktop) {
+            display: list-item;
+          }
+        }
+      }
+    }
+  }
+
+  & .design-project-price {
+    background-color: $gold;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    color: $white;
+    font-family: $yeseva;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media ($desktop) {
+      font-size: toRem(18px);
+      left: 7.5%;
+      padding-bottom: toRem(17px);
+      padding-top: toRem(17px);
+      width: 60%;
+
+      &.short {
+        bottom: -25%;
+      }
+
+      &.medium {
+        bottom: -43%;
+      }
+
+      &.long {
+        bottom: -71%;
+      }
+    }
+
+    @media ($mobile) {
+      font-size: toRem(15px);
+      max-width: toRem(187px);
+      padding-bottom: toRem(12px);
+      padding-top: toRem(12px);
+      width: 55%;
+
+      &.short {
+        bottom: -18%;
+      }
+
+      &.medium {
+        bottom: -37%;
+      }
+
+      &.long {
+        bottom: -37%;
+      }
+    }
+  }
 }

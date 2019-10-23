@@ -67,13 +67,10 @@
       color: $grey;
       font-family: $futura-book;
       line-height: 1.5rem;
+      padding-left: toRem(15px);
 
       @media ($mobile) {
         font-size: toRem(13px);
-      }
-
-      & .list-item {
-        margin-left: toRem(15px);
       }
     }
   }
