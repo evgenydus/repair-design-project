@@ -1,20 +1,22 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/functions';
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/functions";
 
-@import 'base/fonts';
-@import 'base/normalize';
+@import "base/fonts";
+@import "base/normalize";
 
-@import 'layout/header';
-@import 'layout/home';
-@import 'layout/projects';
-@import 'layout/subscription';
-@import 'layout/types';
-@import 'layout/measurements';
-@import 'layout/examples';
-@import 'layout/design-project';
-@import 'layout/team';
+@import "layout/header";
+@import "layout/home";
+@import "layout/projects";
+@import "layout/subscription";
+@import "layout/types";
+@import "layout/measurements";
+@import "layout/examples";
+@import "layout/design-project";
+@import "layout/principles";
+@import "layout/team";
+
 //@import 'layout/clients';
 //@import 'layout/contacts';
 //@import 'layout/footer';

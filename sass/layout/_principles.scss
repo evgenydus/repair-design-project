@@ -1,0 +1,124 @@
+.principles {
+  background-color: $dark;
+  padding: toRem(287px) toRem(100px) toRem(30px);
+  @include flex($justify-content: space-between, $align-items: flex-start);
+
+
+  @media ($mobile) {
+    display: none;
+  }
+
+  & .principles-text-block {
+
+    & .pretitle {
+      color: $white;
+      font-family: $futura-demic;
+      font-size: toRem(15px);
+      margin-bottom: toRem(18px);
+      text-transform: uppercase;
+    }
+
+    & .principles-text-block-title {
+      color: $gold;
+      font-family: $yeseva;
+      font-size: toRem(27px);
+      margin-bottom: toRem(92px);
+      max-width: 160px;
+      position: relative;
+      text-transform: uppercase;
+
+      &:after {
+        @include pseudo-line (92px);
+        bottom: toRem(16px);
+        left: toRem(190px);
+      }
+    }
+
+    & .principle-text-container {
+
+      & .slide-number {
+        color: $white;
+        font-family: $yeseva;
+        font-size: toRem(18px);
+      }
+
+      & .principle-title {
+        color: $gold;
+        font-family: $yeseva;
+        font-size: toRem(15px);
+        line-height: 1.5em;
+        margin-bottom: toRem(16px);
+        margin-top: toRem(22px);
+        max-width: 215px;
+        text-transform: uppercase;
+      }
+
+      & .principle-text {
+        color: $white;
+        font-family: $futura-book;
+        font-size: toRem(15px);
+        line-height: 1.7em;
+        margin-bottom: toRem(16px);
+        max-width: toRem(337px);
+      }
+    }
+
+    & .principles-slider {
+      margin-top: toRem(110px);
+
+      & .slider-navigation{
+        max-width: toRem(287px);
+      }
+    }
+  }
+}
+
+.principles-list-container {
+  margin-top: toRem(70px);
+
+  & .principles-list {
+    @include flex($align-items: flex-start, $justify-content: space-between);
+    flex-wrap: wrap;
+    max-width: 765px;
+
+    & .principles-list-item {
+      color: $grey;
+      cursor: pointer;
+      flex: 1 1 125px;
+      margin-bottom: toRem(45px);
+      transition: $transit;
+
+      & .principle-number {
+        border-bottom: 1px solid $gold;
+        color: $white;
+        display: inline-block;
+        font-family: $yeseva;
+        font-size: toRem(15px);
+        margin-bottom: toRem(17px);
+      }
+
+      & .principle {
+        font-family: $futura-book;
+        font-size: toRem(15px);
+        max-width: toRem(134px);
+      }
+
+      &.active {
+        color: $white;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    & .flex-invisible {
+      flex: 1 1 175px;
+      visibility: collapse;
+    }
+  }
+
+  & .principles-list-image {
+    max-width: 762px;
+  }
+}
