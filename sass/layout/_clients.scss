@@ -1,3 +1,78 @@
 .clients {
-  height: toRem(1046px);
+  padding: 0 toRem(100px) toRem(385px);
+
+  @media ($mobile) {
+    display: none;
+  }
+
+  & .clients-title {
+    margin-bottom: toRem(25px);
+    @include title($dark);
+  }
+
+  & .section-text {
+    font-family: $futura-book;
+    font-size: toRem(20px);
+    line-height: 2.2rem;
+    margin: 0 auto toRem(75px);
+    max-width: toRem(350px);
+    position: relative;
+    text-align: center;
+  }
+}
+
+.clients-container {
+    @include flex($justify-content: space-between);
+
+  & .feedback {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
+    max-width: toRem(375px);
+    padding: toRem(25px) toRem(20px) toRem(90px);
+    position: relative;
+
+    & .feedback-head {
+      margin-bottom: toRem(22px);
+      @include flex($justify-content: flex-start);
+
+      & .client-name {
+        font-family: $yeseva;
+        font-size: toRem(18px);
+        margin-left: toRem(25px);
+        max-width: toRem(215px);
+      }
+    }
+
+    & .feedback-text {
+      color: $grey;
+      font-family: $futura-book;
+      font-size: toRem(15px);
+      line-height: 1.7em;
+    }
+
+    & .project-parameters {
+      background-color: $gold;
+      bottom: -7%;
+      box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+      left: 0;
+      position: absolute;
+      @include flex;
+
+      & .project-parameter {
+        color: $white;
+        font-family: $yeseva;
+        font-size: toRem(17px);
+        min-width: toRem(140px);
+        padding: toRem(12px);
+        @include flex($justify-content: space-around);
+
+        &.area {
+          border-right: 1px solid #fff;
+        }
+
+        & .parameter-icon {
+          margin-right: toRem(12px)
+        }
+      }
+    }
+  }
 }

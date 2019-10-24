@@ -2,8 +2,7 @@
   position: relative;
 
   @media ($desktop) {
-    padding-left: toRem(206px);
-    padding-right: toRem(206px);
+    padding: 0 toRem(206px) toRem(100px)
   }
 
   @media ($mobile) {
@@ -53,7 +52,7 @@
     font-family: $futura-book;
     font-size: toRem(20px);
     line-height: 1.7em;
-    margin: toRem(130px) auto toRem(95px);
+    margin: toRem(130px) auto 0;
     max-width: toRem(558px);
     position: relative;
     text-align: center;
