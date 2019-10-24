@@ -1,3 +1,139 @@
 .team {
-  height: toRem(920px);
+  position: relative;
+
+  @media ($desktop) {
+    padding-left: toRem(206px);
+    padding-right: toRem(206px);
+  }
+
+  @media ($mobile) {
+    background-color: $dark;
+    padding: toRem(70px) toRem(18px) toRem(20px);
+  }
+
+  & .background {
+    @media ($desktop) {
+      background-color: $dark;
+      left: 0;
+      min-height: 60%;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  & .team-title {
+    margin-bottom: toRem(25px);
+    @include title($white);
+  }
+
+  & .section-text {
+    color: $white;
+    font-family: $futura-book;
+    position: relative;
+    text-align: center;
+
+    @media ($desktop) {
+      font-size: toRem(20px);
+      line-height: 2.2rem;
+      margin: 0 auto toRem(75px);
+      max-width: toRem(420px);
+    }
+
+    @media ($mobile) {
+      color: $white;
+      font-size: toRem(14px);
+      line-height: 1.5rem;
+      margin: 0 auto toRem(80px);
+      max-width: toRem(295px);
+    }
+  }
+
+  & .team-caption {
+    font-family: $futura-book;
+    font-size: toRem(20px);
+    line-height: 1.7em;
+    margin: toRem(130px) auto toRem(95px);
+    max-width: toRem(558px);
+    position: relative;
+    text-align: center;
+
+    &::before {
+      @include pseudo-line(55px);
+      left: 50%;
+      top: toRem(-17px);
+      transform: translateX(-50%);
+    }
+
+    @media ($mobile) {
+      display: none;
+    }
+  }
+}
+
+.team-wrapper {
+  @include flex($justify-content: space-between);
+
+  @media ($mobile) {
+    flex-direction: column;
+    margin-left: toRem(35px);
+  }
+
+  & .team-container {
+    position: relative;
+
+    @media ($mobile) {
+      margin-bottom: toRem(167px);
+    }
+  }
+
+  & .team-image {
+    max-width: 100%;
+  }
+
+  & .position-icon {
+    background-color: $gold;
+    box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
+    height: 70px;
+    left: -35px;
+    position: absolute;
+    top: -35px;
+    width: 70px;
+    @include flex;
+  }
+
+  & .team-description-container {
+    background-color: #fff;
+    bottom: -15%;
+    left: 50%;
+    padding-top: toRem(23px);
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 80%;
+
+    & .team-name {
+      font-family: $yeseva;
+      font-size: toRem(18px);
+    }
+
+    & .team-position {
+      color: $grey;
+      font-family: $futura-book;
+      font-size: toRem(18px);
+      margin-bottom: toRem(25px);
+      margin-top: toRem(10px);
+    }
+  }
+
+  & .team-about {
+    background-color: $gold;
+    color: $white;
+    font-family: $yeseva;
+    font-size: toRem(13px);
+    padding-bottom: toRem(13px);
+    padding-top: toRem(13px);
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
