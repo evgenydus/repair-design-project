@@ -1,90 +1,51 @@
-.measurements {
-  margin-top: toRem(350px);
-  padding-right: toRem(100px);
-  @include flex($justify-content: space-between);
+.questions {
+  background-color: $dark;
 
-  @media ($mobile) {
-    display: none;
+  @media ($desktop) {
+    left: 50%;
+    padding: toRem(28px) toRem(182px);
+    position: absolute;
+    top: -21%;
+    transform: translateX(-50%);
+    width: 63%;
   }
 
-  & .circle {
-    background-image: url("../../assets/images/building.jpg");
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    min-width: toRem(790px);
-    position: relative;
+  @media ($mobile) {
+    padding: toRem(76px) toRem(17px) toRem(46px);
 
-    & .feature-container {
-        position: absolute;
-        @include flex;
+  }
 
-        &:nth-child(2) {
-          left: 353px;
-          top: 63px;
+  & .questions-title {
+    color: $white;
+    font-family: $yeseva;
+    font-size: toRem(20px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: toRem(280px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & .have-questions {
+    @media ($desktop) {
+      @include flex($justify-content: space-between);
+      flex-wrap: wrap;
+    }
+
+    & .question-form {
+      font-family: $futura-book;
+      margin-top: toRem(45px);
+      text-align: left;
+
+      @media ($desktop) {
+        &:first-child, &:nth-child(2) {
+          flex-basis: 44%;
         }
 
         &:nth-child(3) {
-          left: 431px;
-          top: 173px;
-        }
-
-        &:nth-child(4) {
-          left: 454px;
-          top: 334px;
-        }
-
-        &:nth-child(5) {
-          left: 388px;
-          top: 496px;
+          flex-basis: 100%;
         }
       }
-
-      & .feature-number{
-        background-color: $gold;
-        border-radius: 100%;
-        color: $white;
-        font-family: $yeseva;
-        font-size: toRem(18px);
-        height: 42px;
-        margin-right: toRem(17px);
-        width: 42px;
-        @include flex;
-      }
-
-      & .feature {
-        font-family: $futura-book;
-        font-size: toRem(18px);
-        font-weight: bold;
-        max-width: toRem(360px);
-      }
-    }
-}
-
-.measure-request {
-  background-color: $dark;
-  display: inline-block;
-  margin-top: toRem(70px);
-  padding: toRem(28px) toRem(50px);
-  text-align: right;
-
-  & .measure-request-title {
-    color: $white;
-    font-family: $futura-demic;
-    font-size: toRem(20px);
-    margin-bottom: toRem(40px);
-    max-width: toRem(280px);
-    text-align: center;
-  }
-
-
-  & .measure {
-    position: relative;
-
-    & .measure-form {
-      font-family: $futura-book;
-      margin-top: toRem(40px);
-      text-align: left;
 
       & .label {
         color: $white;
@@ -99,7 +60,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         color: $white;
         font-family: $futura-book;
-        font-size: toRem(17px);
+        font-size: toRem(18px);
         padding-bottom: 8px;
         padding-top: 6px;
         width: 100%;
@@ -114,7 +75,12 @@
     }
 
     & .agree {
-      margin-top: toRem(15px);
+      margin-top: toRem(45px);
+
+      @media ($desktop){
+        flex-basis: 100%;
+        text-align: center;
+      }
 
       & input {
         cursor: pointer;
@@ -127,11 +93,10 @@
       & .check-container {
         color: $white;
         cursor: pointer;
-        display: block;
+        display: inline-block;
         font-family: $futura-book;
         padding-left: toRem(25px);
         position: relative;
-
 
         & .checkmark {
           border-radius: 2px;
@@ -173,8 +138,14 @@
       }
     }
 
+    .question-submit-container {
+      @media ($desktop) {
+        text-align: center;
+        flex-basis: 100%;
+      }
+    }
 
-    & .measure-submit {
+    & .question-submit {
       background-color: $gold;
       border-radius: 2px;
       border: 0;
@@ -185,30 +156,15 @@
       min-width: toRem(215px);
       padding-bottom: toRem(20px);
       padding-top: toRem(20px);
-      text-align: center;
       text-transform: uppercase;
 
       &:hover {
         @include button-hover;
       }
+
+      @media ($mobile) {
+        width: 100%;
+      }
     }
-  }
-}
-
-.discount {
-  align-items: center;
-  color: $gold;
-  display: flex;
-  font-family: $futura-demic;
-  margin-left: toRem(27px);
-  margin-top: toRem(38px);
-  max-width: 280px;
-
-  & .moneybox {
-    background-color: $gold;
-    border-radius: 100%;
-    display: inline-block;
-    margin-right: toRem(25px);
-    padding: toRem(17px) toRem(16px);
   }
 }

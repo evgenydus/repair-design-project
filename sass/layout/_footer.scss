@@ -1,4 +1,12 @@
-.footer{
-  height: toRem(133px);
+.footer {
   background-color: $dark;
+  @include flex($justify-content: space-between);
+
+  @media ($desktop) {
+    padding: toRem(24px) toRem(100px) toRem(22px) toRem(82px);
+  }
+
+  @media ($mobile) {
+    display: none;
+  }
 }

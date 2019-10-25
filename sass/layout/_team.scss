@@ -7,7 +7,7 @@
 
   @media ($mobile) {
     background-color: $dark;
-    padding: toRem(70px) toRem(18px) toRem(20px);
+    padding: toRem(70px) toRem(18px) toRem(52px);
   }
 
   & .background {
@@ -83,6 +83,10 @@
 
     @media ($mobile) {
       margin-bottom: toRem(167px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -13,6 +13,10 @@
   padding: toRem(194px) 0 toRem(208px) toRem(60px);
   }
 
+  @media (min-width: 500px) and (max-width: 860px) {
+    text-align: center;
+  }
+
   @media  ($mobile) {
     padding: toRem(85px) toRem(18px) toRem(61px);
     background-position-x: 50%;
@@ -24,6 +28,10 @@
 
   @media  ($desktop) {
     max-width: toRem(540px);
+  }
+
+  @media (min-width: 500px) and (max-width: 860px) {
+    display: inline-block;
   }
 
   & .proposition-head {
@@ -38,7 +46,7 @@
     @media  ($mobile) {
       font-size: toRem(23px);
       margin-bottom: toRem(15px);
-      max-width: 265px;
+      max-width: 270px;
     }
 
     & .city {
@@ -60,7 +68,7 @@
         font-size: toRem(18px);
         line-height: toRem(25px);
         margin-bottom: toRem(32px);
-        max-width: 265px;
+        max-width: 270px;
       }
   }
 

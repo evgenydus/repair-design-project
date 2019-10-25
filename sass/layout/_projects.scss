@@ -207,11 +207,14 @@
   @include flex($justify-content: space-between, $align-items: flex-start);
   flex-flow: column wrap;
   max-height: toRem(200px);
-  min-width: toRem(420px);
+
+  @media ($desktop) {
+    min-width: toRem(420px);
+  }
 
   @media ($mobile) {
     order: 3;
-    min-width: 360px;
+    min-width: 100%;
   }
 
   & .parameter-head {

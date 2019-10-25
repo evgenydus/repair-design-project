@@ -1,4 +1,72 @@
 .contacts {
-  height: toRem(954px);
-  background-image: url("../../assets/images/contacts-bg.jpg");
+
+  @media ($desktop) {
+    background-image: url("../../assets/images/contacts-bg.jpg");
+    padding: toRem(255px) toRem(17px) toRem(30px);
+    position: relative;
+  }
+
+  @media ($mobile) {
+    background-color: $dark;
+    padding: 0 toRem(17px) toRem(38px);
+  }
+
+  & .map {
+    max-width: 100%;
+
+    @media ($desktop) {
+      order: 3;
+      margin-top: toRem(30px);
+    }
+
+    @media ($mobile) {
+      width: 100%;
+    }
+  }
+
+  & .address {
+    color: $gold;
+    font-family: $yeseva;
+    line-height: 1.5em;
+    text-align: center;
+
+    @media ($desktop) {
+      order: 1;
+    }
+
+    @media ($mobile) {
+      margin-top: toRem(42px);
+      font-size: toRem(18px);
+    }
+  }
+
+  & .contact-click {
+    @include flex($justify-content: space-between);
+
+    @media ($desktop) {
+      max-width: 100px;
+      margin: toRem(24px) auto 0;
+      order: 2;
+    }
+
+    @media ($mobile) {
+      max-width: 100px;
+      margin: toRem(24px) auto 0;
+    }
+
+    & .contact-circle {
+      background-color: $gold;
+      border-radius: 100%;
+      height: 39px;
+      width: 39px;
+      @include flex;
+    }
+  }
+
+  & .contact-container {
+    @media ($desktop) {
+      flex-direction: column;
+      @include flex;
+    }
+  }
 }

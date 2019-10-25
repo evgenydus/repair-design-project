@@ -57,9 +57,14 @@
 
 .design-project-wrapper {
   margin-top: toRem(40px);
+  @include flex($justify-content: space-between);
 
   @media ($desktop) {
-    @include flex($justify-content: space-between);
+
+  }
+
+  @media ($mobile) {
+    flex-direction: column;
   }
 
   & .design-project-container {

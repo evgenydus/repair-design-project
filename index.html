@@ -807,10 +807,97 @@
     </div>
   </section>
   <section class="contacts">
+    <div class="questions">
+      <h2 class="questions-title">Have any questions?</h2>
+      <form class="have-questions" id="question" method="get">
+        <div class="question-form">
+          <label class="label" for="question-name">Name</label>
+          <input class="input-field" id="question-name" type="text" placeholder="What is your name:" required>
+        </div>
+        <div class="question-form">
+          <label class="label" for="question-number">Number</label>
+          <input class="input-field" id="question-number"  type="text" placeholder="Your phone number:" required>
+        </div>
+        <div class="question-form">
+          <label class="label" for="question-email">Question</label>
+          <input class="input-field" id="question-email"  type="text" placeholder="I want to know:" required>
+        </div>
+        <div class="agree">
+          <label class="check-container" for="question-agree">
+            <input id="question-agree" type="checkbox" required>
+            <div class="checkmark"></div>
+            I agree to the processing of personal data
+          </label>
+        </div>
+        <div class="question-submit-container">
+          <button class="question-submit" form="question" type="submit">
+            <span>Submit</span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-container">
+      <img class="map" src="assets/images/map.jpg" alt="">
+      <h2 class="address">Rostov-on-Don, Nansen St., 239 <br> Shopping Center Decorum <br> Tel +7 (928) 768 32 29</h2>
+      <div class="contact-click">
+        <div class="contact-circle mail">
+          <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.70024 1.25659H18.3002C19.3727 1.25659 20.2502 2.13409 20.2502 3.20659V14.9066C20.2502 15.9791 19.3727 16.8566 18.3002 16.8566H2.70024C1.62774 16.8566 0.750244 15.9791 0.750244 14.9066V3.20659C0.750244 2.13409 1.62774 1.25659 2.70024 1.25659Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.2502 3.20728L10.5002 10.0323L0.750244 3.20728" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="contact-circle insta">
+          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5714 1.69897H5.21422C2.90645 1.69897 1.03564 3.56978 1.03564 5.87755V14.2347C1.03564 16.5424 2.90645 18.4133 5.21422 18.4133H13.5714C15.8791 18.4133 17.7499 16.5424 17.7499 14.2347V5.87755C17.7499 3.56978 15.8791 1.69897 13.5714 1.69897Z" stroke="white" stroke-width="1.5"/>
+            <path d="M12.7356 9.52976C12.8388 10.2253 12.72 10.9356 12.3961 11.5597C12.0723 12.1838 11.5599 12.6899 10.9318 13.0061C10.3038 13.3222 9.59204 13.4322 8.89784 13.3205C8.20365 13.2088 7.56235 12.881 7.06516 12.3839C6.56798 11.8867 6.24022 11.2454 6.12852 10.5512C6.01681 9.85699 6.12685 9.14525 6.44296 8.51719C6.75908 7.88914 7.26519 7.37675 7.8893 7.05291C8.51341 6.72907 9.22374 6.61027 9.91926 6.71341C10.6287 6.81861 11.2855 7.1492 11.7927 7.65635C12.2998 8.1635 12.6304 8.82031 12.7356 9.52976Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
   
+        </div>
+      </div>
+    </div>
   </section>
   <footer class="footer">
-  
+    <a class="logo-link link" href="#">
+      <h2 class="logo">IC "Repair Design Project"</h2>
+    </a>
+    <ul class="navbar">
+      <li class="menu-item">
+        <a href="">
+          <span class="link">Home</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="">
+          <span class="link">Projects</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="">
+          <span class="link">Measurement</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="">
+          <span class="link">Team</span>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="">
+          <span class="link">Reviews</span>
+        </a>
+      </li>
+      <li class="menu-item last-item">
+        <a href="">
+          <span class="link">Contacts</span>
+        </a>
+      </li>
+    </ul>
+    <a class="phone-call" href="tel:+79287683239">
+      <span class="phone-number link">+7 (928) 768-32-39</span>
+    </a>
+    <div class="call-request">
+      <span>Request a call</span>
+    </div>
   </footer>
 </body>
 </html>
