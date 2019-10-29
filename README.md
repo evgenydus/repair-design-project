@@ -131,8 +131,8 @@ Link to the staging environment: http://repair-design-dus.surge.sh
 ### Mark calculation:
 100 - 6 - 20 - 5 = 69
 
-(-20) Failure to submit on time may result in losing up to 40 points of the total homework score!
-(-5) Failure to comply with the requirements of any task item may result in losing 3 to 10 points.
-(-0 checked twice every file) Failure to comply with coding standards or syntax requirements may result in losing up to 20 points.
-(-0) Failure to comply with the FIG template (except for nuances with fonts) may result in losing up to 40 points.
+(-20) Failure to submit on time may result in losing up to 40 points of the total homework score!<br>
+(-5) Failure to comply with the requirements of any task item may result in losing 3 to 10 points.<br>
+(-0 checked twice every file) Failure to comply with coding standards or syntax requirements may result in losing up to 20 points.<br>
+(-0) Failure to comply with the FIG template (except for nuances with fonts) may result in losing up to 40 points.<br>
 (-0) Failure to match both desktop and mobile may result in losing up to 50 points.
